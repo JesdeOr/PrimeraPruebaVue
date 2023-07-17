@@ -53,7 +53,7 @@
 
 <template>
   <form class="selectorNumeros">
-    <h3>Guess the slot where the bullet is:</h3>
+    <h3>Selecciona un número:</h3>
     <label>
       <input type="radio" name="numero" value="1"> 1
     </label>
@@ -73,7 +73,7 @@
       <input type="radio" name="numero" value="6"> 6
     </label>
     &nbsp;
-    <button type="button" v-on:click="elegir()">Select</button>
+    <button type="button" v-on:click="elegir()">Elegir</button>
   </form>
   
 </template>

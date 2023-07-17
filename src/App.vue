@@ -10,8 +10,8 @@ import SelectorNumero from './components/SelectorNumero.vue'
 
     <div class="wrapper">
       <Titulo 
-      titulo = "Russian Roulette - 3 Lifes" 
-      subTitulo = "You have 3 trys to guess the bullet slot. If so, you are safe... but if you don't... maybe you want to try again..."
+      titulo = "¡Adivina el número!" 
+      subTitulo = "Tienes 3 intentos para adivinar en qué número estoy pensando. Cada intento pienso en uno distinto."
       />
       <SelectorNumero></SelectorNumero>
     </div>
