@@ -1,6 +1,6 @@
 <script setup>
 import Titulo from './components/Titulo.vue'
-import SelectorNumero from './components/SelectorNumero.vue'
+import NumberSelector from './components/NumberSelector.vue';
 
 </script>
 
@@ -13,7 +13,7 @@ import SelectorNumero from './components/SelectorNumero.vue'
       titulo = "¡Adivina el número!" 
       subTitulo = "Tienes 3 intentos para adivinar en qué número estoy pensando. Cada intento pienso en uno distinto."
       />
-      <SelectorNumero></SelectorNumero>
+      <NumberSelector></NumberSelector>
     </div>
   </header>
 

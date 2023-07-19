@@ -5,7 +5,7 @@
   let vidas = 3;
 
   function generarNumero(){
-    let numero = Math.random()
+    const numero = Math.random()
 
     if (numero <= 1/6){
       numeroRandom = 1;
