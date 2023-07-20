@@ -1,6 +1,6 @@
 <script setup>
   //Número máximo sobre el que calcular un número aleatorio
-  const odds = 100;
+  const odds = 2;
   let lifes = 3;
   let msg = '';
   
@@ -8,11 +8,8 @@
   const chooseNumber = () => {
     if(lifes > 0){
       const rndNumber = generateNumber(1, odds)
-      let winner = false
-      document.getElementsByName('numero').forEach(radio => {
-        winner = winner || radio.checked && radio.value == rndNumber
-      })
-      winner ? msg = 'Has ganado!': ((lifes -= 1, msg = `Has perdido... El número era ${rndNumber}. Te queda(n) ${lifes} vida(s).`))
+      const winner = Array.from(document.getElementsByName('numero')).some(radio => radio.checked && radio.value == rndNumber);
+      winner ? (msg = 'Has ganado!') : ((lifes -= 1), (msg = `Has perdido... El número era ${rndNumber}. Te queda(n) ${lifes} vida(s).`));
     } else{
       msg = 'No te quedan vidas. Por favor, recarga la página.'
     }
