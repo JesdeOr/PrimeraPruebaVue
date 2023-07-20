@@ -1,6 +1,7 @@
 <script setup>
 import Titulo from './components/Titulo.vue'
 import NumberSelector from './components/NumberSelector.vue';
+import MinimumIntCalculator from './components/MinimumIntCalculator.vue';
 
 </script>
 
@@ -9,6 +10,7 @@ import NumberSelector from './components/NumberSelector.vue';
     <img alt="Revolver Logo" class="logo" src="./assets/revolver.png" width="125" height="125" style="filter: invert(80%);"/>
 
     <div class="wrapper">
+      
       <Titulo 
       titulo = "¡Adivina el número!" 
       subTitulo = "Tienes 3 intentos para adivinar en qué número estoy pensando. Cada intento pienso en uno distinto."

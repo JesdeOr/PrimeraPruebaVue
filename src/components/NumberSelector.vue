@@ -36,10 +36,7 @@
   </form>
   <ul id="numbersRadiobutton" class="numbersRadiobutton">
     <li class="numberItem" v-for="(index, item) in odds">
-    <label>
       <input type="radio" name="numero" :value="index"> {{index}}
-      &nbsp;
-    </label>
     </li>
   </ul>
 </template>
@@ -58,11 +55,9 @@
   flex-direction: row;
 }
 .numberItem {
-  width: 5%; 
-  margin-right: 1%; 
-  margin-bottom: 10px; 
+  flex-basis: 5%;
   box-sizing: border-box;
-  text-align: center;
+  padding: 5px;
   }
 
 </style>
